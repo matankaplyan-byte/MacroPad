@@ -3,7 +3,8 @@
 
 A fully customizable 6-key macro pad powered by a custom RP2040 PCB, featuring a rotary encoder, a 1.3-inch display, and a Python desktop application.
 
-![MacroPad 3D Model](images/macropad-model.png)
+<img width="2560" height="1440" alt="Screenshot (862)" src="https://github.com/user-attachments/assets/53ceb863-d34f-47a9-a3cf-e2365d863bde" />
+
 
 ## The Idea
 
