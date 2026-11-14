@@ -1,6 +1,9 @@
+
 # MacroPad
 
 A fully customizable 6-key macro pad powered by a custom RP2040 PCB, featuring a rotary encoder, a 1.3-inch display, and a Python desktop application.
+
+![MacroPad 3D Model](images/macropad-model.png)
 
 ## The Idea
 
@@ -29,6 +32,40 @@ The rotary encoder will control volume when rotated and switch between macro lay
 
 The display is intended to show useful information about the currently selected layout and macros.
 
+### PCB Design
+
+I designed the custom PCB in KiCad, including the RP2040 microcontroller, USB-C connection, mechanical switches, rotary encoder, and display connector.
+
+**Circuit schematic:**
+
+![MacroPad KiCad Schematic](images/schematic.png)
+
+**PCB layout:**
+
+![MacroPad PCB Layout](images/pcb-layout.png)
+
+**PCB 3D preview:**
+
+![MacroPad PCB 3D Preview](images/pcb-3d.png)
+
+![MacroPad PCB Angled View](images/pcb-angled.png)
+
+### 3D Modeling
+
+I used Fusion 360 to design the enclosure and check how the components would fit together.
+
+I imported models of the PCB components, including the switches, screen, and rotary encoder, to help position everything correctly.
+
+**Component assembly in Fusion 360:**
+
+![MacroPad Fusion Assembly](images/fusion-assembly.png)
+
+![MacroPad Fusion Component View](images/fusion-components.png)
+
+The enclosure was designed as two separate pieces, with holes for heat-set inserts and screws to hold them together.
+
+The first print still needs some improvements because the supports damaged the top part, but the bottom part printed successfully.
+
 ## Desktop Software
 
 The controller is being developed in Python using Tkinter.
@@ -41,22 +78,28 @@ The controller is being developed in Python using Tkinter.
 - WhatsApp and YouTube launching
 - Discord mute/unmute
 - Media play/pause
-- Custom macro editor for slots 5 and 6
+- Custom macro editing
 - Support for keyboard shortcuts, websites, and launching applications
+- Creating and deleting custom layouts
+- Saving layouts and macros using JSON
+- Rotary encoder volume control in the Arduino prototype
+- OLED display support in the Arduino prototype
 
 ### Planned features
 
-- Unlimited customizable macro layouts
-- Switching layouts using the rotary encoder button
-- Saving layouts and macros using JSON
-- Display integration
-- Communication with the final RP2040 hardware
+- Expanding the physical button support from one to six buttons
+- Adapting the Arduino Pro Micro code to the custom RP2040 PCB
+- Updating the GPIO assignments
+- Integrating the final ST7789 display
+- Testing communication with the final hardware
 
 ## Current Prototype
 
 An **Arduino Pro Micro with a single push button** is being used to test the software.
 
 The Arduino sends button-press events to Python over USB Serial, allowing the desktop application to execute macros.
+
+I also connected a 0.96-inch OLED display and rotary encoder to test the display functionality and volume controls.
 
 **The Arduino Pro Micro is not part of the final hardware design.** It is only being used for development and testing while the custom PCB is being manufactured.
 
@@ -80,22 +123,21 @@ python main.py
 - [x] Create initial Python macro controller
 - [x] Build Arduino button prototype
 - [x] Create dark-themed GUI
-- [x] Add basic custom macro editing
+- [x] Add custom macro editing
 - [x] Implement JSON configuration saving
 - [x] Implement unlimited custom layouts
 - [x] Add rotary encoder controls
-- [x] Finish the 3D-printed enclosure
+- [x] Finish the 3D-printed enclosure design
+- [ ] Fix the enclosure print
 - [ ] Manufacture and assemble the custom PCB
 - [ ] Integrate the ST7789 display
 - [ ] Test the final hardware
 
-
 ## Bill of Materials (BOM)
 
 The complete Bill of Materials for the MacroPad, including component quantities, values, and LCSC part numbers, is available here:
-macropad/macro_pad_BOM.csv
 
-
+[View the MacroPad BOM](macropad/macro_pad_BOM.csv)
 
 ## Hack Club Forge
 
