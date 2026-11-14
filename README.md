@@ -89,6 +89,13 @@ python main.py
 - [ ] Integrate the ST7789 display
 - [ ] Test the final hardware
 
+
+## Bill of Materials (BOM)
+
+The complete Bill of Materials for the MacroPad, including component quantities, values, and LCSC part numbers, is available here:
+
+
+
 ## Hack Club Forge
 
 This project is being developed for Hack Club Forge.
