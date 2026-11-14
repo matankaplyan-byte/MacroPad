@@ -39,17 +39,20 @@ I designed the custom PCB in KiCad, including the RP2040 microcontroller, USB-C 
 
 **Circuit schematic:**
 
-![MacroPad KiCad Schematic](images/schematic.png)
+<img width="2048" height="1152" alt="ChatGPT Image Nov 14, 2026, 02_33_19 PM" src="https://github.com/user-attachments/assets/96a21146-3a39-4d87-94cd-72305d37074b" />
+
 
 **PCB layout:**
 
-![MacroPad PCB Layout](images/pcb-layout.png)
+<img width="2048" height="1152" alt="ChatGPT Image Nov 14, 2026, 02_33_54 PM" src="https://github.com/user-attachments/assets/39333f33-181f-44fd-bd36-0da20be7a5ad" />
+
 
 **PCB 3D preview:**
 
-![MacroPad PCB 3D Preview](images/pcb-3d.png)
+<img width="2048" height="1152" alt="ChatGPT Image Nov 14, 2026, 02_34_36 PM" src="https://github.com/user-attachments/assets/893e9ace-3557-45fd-a1e5-424b60782e8c" />
+<img width="2048" height="1152" alt="ChatGPT Image Nov 14, 2026, 02_34_24 PM" src="https://github.com/user-attachments/assets/ec0f9678-161c-4047-8b42-18b7e6d6c628" />
 
-![MacroPad PCB Angled View](images/pcb-angled.png)
+
 
 ### 3D Modeling
 
@@ -58,10 +61,10 @@ I used Fusion 360 to design the enclosure and check how the components would fit
 I imported models of the PCB components, including the switches, screen, and rotary encoder, to help position everything correctly.
 
 **Component assembly in Fusion 360:**
+<img width="2560" height="1440" alt="Screenshot (934)" src="https://github.com/user-attachments/assets/ddf61ac4-3469-4357-9b97-b7aec4beacab" />
+<img width="2560" height="1440" alt="Screenshot (935)" src="https://github.com/user-attachments/assets/5e7e5fa4-000b-40ba-ab80-7eddfe728958" />
+<img width="2560" height="1440" alt="Screenshot (936)" src="https://github.com/user-attachments/assets/0114df5d-88f7-431b-8dab-e2a3d04ae7cd" />
 
-![MacroPad Fusion Assembly](images/fusion-assembly.png)
-
-![MacroPad Fusion Component View](images/fusion-components.png)
 
 The enclosure was designed as two separate pieces, with holes for heat-set inserts and screws to hold them together.
 
