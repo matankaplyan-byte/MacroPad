@@ -81,10 +81,10 @@ python main.py
 - [x] Build Arduino button prototype
 - [x] Create dark-themed GUI
 - [x] Add basic custom macro editing
-- [ ] Implement JSON configuration saving
-- [ ] Implement unlimited custom layouts
-- [ ] Add rotary encoder controls
-- [ ] Finish the 3D-printed enclosure
+- [x] Implement JSON configuration saving
+- [x] Implement unlimited custom layouts
+- [x] Add rotary encoder controls
+- [x] Finish the 3D-printed enclosure
 - [ ] Manufacture and assemble the custom PCB
 - [ ] Integrate the ST7789 display
 - [ ] Test the final hardware
@@ -93,6 +93,7 @@ python main.py
 ## Bill of Materials (BOM)
 
 The complete Bill of Materials for the MacroPad, including component quantities, values, and LCSC part numbers, is available here:
+macropad/macro_pad_BOM.csv
 
 
 
